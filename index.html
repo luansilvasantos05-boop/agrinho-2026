@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte & Sustentável</title>
+    <!-- Ícones externos para redes sociais -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PARTE 1: MENU DE NAVEGAÇÃO -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Agro<span>Forte</span></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu" id="nav-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Planos de Serviço</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- PARTE 2: DESTAQUE (HERO SECTION) -->
+    <section class="destaque" id="inicio">
+        <h1>Produtividade Máxima com Sustentabilidade de Ponta</h1>
+        <p>Soluções tecnológicas sob medida para o agronegócio que respeitam o meio ambiente e blindam o seu bolso.</p>
+        <button class="btn-principal" onclick="scrollToSection('servicos')">Ver Planos e Serviços</button>
+    </section>
+
+    <!-- PARTE 3: SERVIÇOS (4 CARDS DE PLANOS) -->
+    <section id="servicos">
+        <h2 class="servicos-titulo">Nossos Planos de Serviço</h2>
+        <div class="cards-container">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <div>
+                    <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Plano Consultoria Eco</h3>
+                    <p>Ideal para pequenas propriedades iniciarem no agro sustentável com foco em manejo orgânico.</p>
+                </div>
+                <div>
+                    <p class="preco">Sob Consulta</p>
+                    <button class="btn-card" onclick="contratarPlano('Consultoria Eco')">Contratar Plano</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div>
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Plano Agro Forte Tech</h3>
+                    <p>Otimização de lavoura utilizando sensores inteligentes e relatórios detalhados de solo.</p>
+                </div>
+                <div>
+                    <p class="preco">Mensal</p>
+                    <button class="btn-card" onclick="contratarPlano('Agro Forte Tech')">Contratar Plano</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div>
+                    <div class="card-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                    <h3>Plano Clima Inteligente</h3>
+                    <p>Monitoramento meteorológico em tempo real com alertas preventivos contra intempéries.</p>
+                </div>
+                <div>
+                    <p class="preco">Semestral</p>
+                    <button class="btn-card" onclick="contratarPlano('Clima Inteligente')">Contratar Plano</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div>
+                    <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Plano Corporativo Full</h3>
+                    <p>Acompanhamento completo, vistorias via drone e certificação de sustentabilidade internacional.</p>
+                </div>
+                <div>
+                    <p class="preco">Anual</p>
+                    <button class="btn-card" onclick="contratarPlano('Corporativo Full')">Contratar Plano</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PARTE 4: CONTATOS E REDES SOCIAIS (FOOTER) -->
+    <footer id="contato">
+        <div class="footer-container">
+            <h2>Fale Conosco</h2>
+            <div class="contatos-links">
+                <!-- Link para o WhatsApp -->
+                <a href="https://wa.me." 
+                   target="_blank" class="contato-item">
+                    <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp: (44) 997037836
+                </a>
+                
+                <!-- Link para o Instagram -->
+                <a href="https://instagram.com" target="_blank" class="contato-item">
+                    <i class="fa-brands fa-instagram" style="color: #E1306C;"></i> Instagram: @_luan_0_1
+                </a>
+            </div>
+            <div class="direitos">
+                <p>&copy; 2026 Agro Forte & Sustentável. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
